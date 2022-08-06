@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,173 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 7%;
+   height: 100%;
+   background-color: #4D5057;
+   color: white;
+   text-align: center;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #4D5057;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4D5057;
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.home-name {
+  color: white;
+}
+
+.home-text-container {
+  text-align: left;
+  padding-top: 15%;
+  padding-left: 20%;
+  
+}
+
+/* .homebox {
+  justify-content: center;
+} */
+
+.welcome-text {
+  display: block;
+  font-size: 3vw;
+  color: #3BC14A;
+}
+
+.intro-text {
+  display: block;
+  font-size: 2.5vw;
+  background-color: #4D5057;
+  color: #CFCFCF
+}
+
+.job-text {
+  display: block;
+  font-size: 3vw;
+  color: #3BC14A;
+}
+
+.container-fluid {
+  background-color: #4D5057;
+}
+
+.nav-text {
+  font-size: large;
+}
+
+a :hover {
+  color: #3BC14A
+}
+/* Side bar  */
+.side-bar-icons {
+  display: grid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4DA167;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3bc14a;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #4e6e5d;
+}
+
+.myWorkContainer {
+  background-color: #4D5057;
+  padding-top: 100px;
+}
+
+#root {
+  background-color: #4D5057;
+}
+
+.contactmecontainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding-top: 100px;
+
+}
+
+.grid {
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(207, 207, 207);
+}
+
+.btn-primary {
+  border-color: none;
 }
